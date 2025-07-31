@@ -1,24 +1,159 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Intro 2 (2º SEC): Kit de Herramientas Digitales</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Intro 2: Kit de Herramientas Digitales</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Preparando el Estudio de Diseño ⏰ 5 minutos</h2>
+                <p>Introducir el objetivo de la sesión: configurar las herramientas de nivel profesional que se usarán durante el año.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto ⏰ 5 minutos</h3>
+                            <p>El facilitador explica la importancia de tener cuentas en plataformas externas para un flujo de trabajo profesional.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Desarrolladores, bienvenidos. En la sesión anterior aseguramos el acceso a nuestro centro de operaciones, Gnius Space. Hoy, equiparemos nuestro estudio de diseño. Un profesional no usa una sola herramienta, sino un ecosistema de plataformas especializadas. Para diseñar nuestros mundos 3D, generar conceptos y colaborar con IAs de ideación, necesitamos acceso a las herramientas correctas. La sesión de hoy es 100% de configuración. Nuestro objetivo es que al terminar, todos tengan su 'kit de herramientas' listo para crear.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Creando cuenta en Delightex (Nuestro Lienzo 3D) ⏰ 12 minutos</h2>
+                <p>Guiar a los estudiantes en el proceso de registro de Delightex, la plataforma central de desarrollo de experiencias interactivas.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Introducción a Delightex ⏰ 2 minutos</h3>
+                            <p>El facilitador introduce Delightex y proyecta la URL de registro.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Nuestra plataforma principal de creación será Delightex. Es un estudio de desarrollo de experiencias interactivas y videojuegos en la nube, usado en la industria. Aquí es donde sus ideas se convertirán en mundos de Realidad Aumentada y Virtual. Proyectaré la dirección web para que creen su cuenta. Sígan los pasos conmigo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Registro Guiado y Verificación ⏰ 10 minutos</h3>
+                            <p>El facilitador guía a los alumnos en el formulario de registro y verifica que todos logren acceder.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Vamos a realizar el registro. Utilicen su correo institucional y sigan las instrucciones en pantalla. Es un proceso estándar. Una vez que reciban el correo de activación, confirmen su cuenta e intenten iniciar sesión. El objetivo es que todos vean el panel principal de Delightex. Levanten la mano para recibir apoyo si surge algún problema.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Activando a nuestro Socio de Ideación (ChatGPT) ⏰ 12 minutos</h2>
+                <p>Guiar a los estudiantes para que se registren en ChatGPT, presentándolo como una herramienta clave para el brainstorming y la estructuración de ideas.</p>
+                 <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Rol de un LLM en Diseño ⏰ 2 minutos</h3>
+                            <p>El facilitador explica el uso profesional de Modelos de Lenguaje Grandes (LLMs) en el proceso creativo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Además de nuestro lienzo 3D, necesitamos un socio para la ideación. Aquí es donde entra ChatGPT. No es solo para hacer preguntas; lo usaremos como una herramienta profesional para generar ideas de historias, de mecánicas de juego, e incluso para estructurar nuestros pensamientos. Es nuestro consultor creativo. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Registro en ChatGPT ⏰ 10 minutos</h3>
+                            <p>El facilitador guía a los alumnos en el proceso de registro de OpenAI.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, proyectaré la URL de OpenAI para crear su cuenta de ChatGPT. De nuevo, pueden usar su cuenta de Google para agilizar el proceso. Sigan los pasos de registro y verificación. El objetivo final es tener la interfaz de chat de ChatGPT abierta y lista para usar. Este es un paso indispensable para nuestras sesiones de 'Studio'.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Preparando el Taller Visual (KREA.ai) ⏰ 11 minutos</h2>
+                <p>Configurar el acceso a una herramienta de IA generativa de imágenes como KREA.ai.</p>
+                 <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Introducción a la IA Generativa Visual ⏰ 2 minutos</h3>
+                            <p>El facilitador explica el rol de KREA.ai para crear 'concept art' y texturas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">La última herramienta clave de nuestro kit es un generador de imágenes y texturas por IA, como KREA.ai. Esta plataforma nos permitirá crear 'concept art' para inspirar nuestras escenas y generar texturas personalizadas para darles un estilo único. Es nuestro director de arte visual.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Registro y Verificación ⏰ 9 minutos</h3>
+                            <p>El facilitador guía el proceso final de registro para completar el kit de herramientas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Vamos con el último paso. Proyectaré la URL de KREA.ai. Procedan a registrarse, nuevamente usando la opción de vincular su cuenta de Google es lo más sencillo. Una vez dentro, exploren brevemente la interfaz. El objetivo es confirmar que todos tienen acceso. Con esto, nuestro estudio de diseño está oficialmente equipado y listo para la primera misión de creación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
